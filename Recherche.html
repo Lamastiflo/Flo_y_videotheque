@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/recherche.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Recherche</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">MoviQuo</a>
+            <div class="nav-links">
+                <ul>
+                    <li class="active"><a href="index.html">Accueil</a></li>
+                    <li><a href="Recherche.html">Recherche</a></li>
+                </ul>
+            </div>
+            <img src="./assets/img/menu-btn.png" alt="menu hamburger" class="menu-hamburger">
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="container__header">
+                <div id="recherche">
+                    <form id="rechercheForm">
+                        <label for="titre"></label>
+                        <input type="text" id="titleInput" placeholder="Titre">
+                        
+                        <label for="annee"></label>
+                        <input type="number" id="yearInput" placeholder="Année">
+        
+                        <select id="typeSelect">
+                            <option value=""></option>
+                            <option value="movie">Film</option>
+                            <option value="series">Série</option>
+                        </select>
+        
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+            <div class="container__body">
+                <div id="resultats"></div>
+            </div>
+        </div>
+        <div id="pagination"></div>
+    </main>
+
+</body>
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/search.js"></script>
+</html>

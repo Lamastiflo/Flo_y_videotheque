@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/tableau.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Accueil</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">MoviQuo</a>
+            <div class="nav-links">
+                <ul>
+                    <li class="active"><a href="index.html">Accueil</a></li>
+                    <li><a href="Recherche.html">Recherche</a></li>
+                </ul>
+            </div>
+            <img src="./assets/img/menu-btn.png" alt="menu hamburger" class="menu-hamburger">
+        </nav>
+    </header>
+    <main>
+        <div class="table">
+            <section class="table__header">
+                <h1>Liste de films</h1>
+                <select name="filtre" id="filtre">
+                    <option value="">Filtrer par</option>
+                    <option value="alpha">ordre alphabétique</option>
+                    <option value="decroissant">ordre décroissant</option>
+                </select>
+            </section>
+            <section class="table__body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Titre</th>
+                            <th>Année</th>
+                            <th>Réalisateur</th>
+                            <th>Genre</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="films">
+
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <button id="showAdd">Ajouter</button>
+            <div id="addForm">
+                <form id="fillForm">
+                    <label for="titre" id="titre"></label>
+                    <input type="text" placeholder="Titre">
+
+                    <label for="annee"></label>
+                    <input type="number" placeholder="Année">
+
+                    <label for="real"></label>
+                    <input type="text" placeholder="Réalisateur">
+
+                    <label for="genre"></label>
+                    <input type="text" placeholder="Genre">
+
+                    <button type="submit">Ajouter</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+</body>
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/app.js" type="module"></script>
+
+</html>
